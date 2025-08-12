@@ -9,48 +9,57 @@ npm or yarn package manager
 
 Git (optional, for cloning)
 
-Clone the Repository
-$ git clone https://github.com/hahmadi-cmu-F24/wayback-react-nodejs
-$ cd YOUR_REPO
+1. Clone the Repository
 
-1. Setup Backend Proxy Server
-$ cd backend
-$ npm install
-Run the backend server (proxy)
-$ node server.js
-The proxy server will listen on http://localhost:4000.
+  $ git clone https://github.com/hahmadi-cmu-F24/wayback-react-nodejs
+  $ cd YOUR_REPO
 
-2. Setup React Frontend
+2. Setup Backend Proxy Server
+   
+  $ cd backend
+
+  $ npm install
+
+  Run the backend server (proxy)
+
+  $ node server.js
+
+  The proxy server will listen on http://localhost:4000.
+
+3. Setup React Frontend
+   
 In a new terminal window/tab:
-$ cd frontend
-$ npm install
-$ npm run dev
-By default, the React app will run at http://localhost:5173 (or similar, as Vite chooses).
+  $ cd frontend
+  $ npm install
+  $ npm run dev
+  By default, the React app will run at http://localhost:5173 (or similar, as Vite chooses).
 
-3. How to Use
-Open the React app in your browser at http://localhost:5173.
+5. How to Use
+  
+  Open the React app in your browser at http://localhost:5173.
+  
+  Enter a URL you want to archive, e.g. https://example.com.
+  
+  Click Save Site to archive the page and related assets.
+  
+  View saved archives under View Archives.
+  
+  Download full archives as ZIP files.
 
-Enter a URL you want to archive, e.g. https://example.com.
-
-Click Save Site to archive the page and related assets.
-
-View saved archives under View Archives.
-
-Download full archives as ZIP files.
-
-Notes
-The proxy server is required to bypass CORS restrictions when fetching external sites.
-
-Make sure both backend and frontend servers are running simultaneously.
-
-The app uses IndexedDB for local storage of archives.
-
-Troubleshooting
-If you get CORS errors, verify the proxy server is running and your URLs are correct.
-
-If downloads fail, ensure the ZIP generation libraries (jszip, file-saver) are installed in frontend.
-
-For any issues, check your browser console and terminal output.
+6. Notes
+   
+  The proxy server is required to bypass CORS restrictions when fetching external sites.
+  
+  Make sure both backend and frontend servers are running simultaneously.
+  
+  The app uses IndexedDB for local storage of archives.
+  
+  Troubleshooting
+  If you get CORS errors, verify the proxy server is running and your URLs are correct.
+  
+  If downloads fail, ensure the ZIP generation libraries (jszip, file-saver) are installed in frontend.
+  
+  For any issues, check your browser console and terminal output.
 
 
 # URL Archiving:
